@@ -1,0 +1,27 @@
+{
+  "Teamserver": {
+    "port": 50203,
+    "endpoint": "/endpoint",
+    "password": "pass",
+    "cert": "/app/dist/server.rsa.crt",
+    "key": "/app/dist/server.rsa.key",
+    "extenders": [
+      "/app/dist/extenders/listener_beacon_http/config.json",
+      "/app/dist/extenders/listener_beacon_smb/config.json",
+      "/app/dist/extenders/listener_beacon_tcp/config.json",
+      "/app/dist/extenders/agent_beacon/config.json",
+      "/app/dist/extenders/listener_gopher_tcp/config.json",
+      "/app/dist/extenders/agent_gopher/config.json"
+    ]
+  },
+
+  "ServerResponse": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Server": "Microsoft IIS 10.0",
+      "Adaptix Version": "v10.0"
+    },
+    "page": "/app/dist/404page.html"
+  }
+}
